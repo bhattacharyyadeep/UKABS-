@@ -5,4 +5,4 @@ Medical image segmentation plays a vital role in diagnosis and treatment plannin
 
 
 
-read the scripts files to run the code.
+read the scripts file to run the code.
