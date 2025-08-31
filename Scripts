@@ -1,0 +1,41 @@
+Step 1: 
+
+git clone https://github.com/bhattacharyyadeep/UKABS
+
+Step 2: Arrange the datasets 
+UKABS
+├── inputs
+│   ├── Dataset_name
+│     ├── images.
+|     ├── masks
+│        ├── 0
+
+and install all the requirement from requirements_2.txt using
+pip intall -r requirements_2.txt 
+
+Step 3:
+
+dataset_dir = '/home/deep/Documents/'
+dataset = 'busi'
+input_size = 256
+outputs_dir = 'busi_ukabs_run'
+# Training command
+python train.py --arch UKABS --dataset {dataset} --input_w {input_size} --input_h {input_size} --name {dataset}_UKABS --data_dir {dataset_dir} --output_dir {outputs_dir}
+
+
+# for ACDC check the train_acdc.py and run it this way 
+python train_acdc.py
+
+
+This how to train the model architecture. For glas use image size 512.
+
+Step 4: 
+
+outputs_dir = 'busi_ukabs_run'
+dataset='busi'
+!python val.py --name {dataset}_UKABS --output_dir {outputs_dir}
+
+# for ACDC
+ python val_acdc.py
+
+This is the validation code to generate the masks as well 
