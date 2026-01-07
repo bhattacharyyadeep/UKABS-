@@ -24,7 +24,7 @@ class BCEDiceLoss(nn.Module):
         intersection = (input * target)
         dice = (2. * intersection.sum(1) + smooth) / (input.sum(1) + target.sum(1) + smooth)
         dice = 1 - dice.sum() / num
-        return 0.5 * bce + dice
+        return 0.5 * bce + 0.5 * dice
 
 
 class LovaszHingeLoss(nn.Module):
