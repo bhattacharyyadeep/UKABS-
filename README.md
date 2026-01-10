@@ -25,7 +25,7 @@ pip intall -r requirements_2.txt
 
 Step 3:
 
-dataset_dir = '/home/deep/Documents/'
+dataset_dir = '/inputs'
 dataset = 'busi'
 input_size = 256
 outputs_dir = 'busi_ukabs_run'
