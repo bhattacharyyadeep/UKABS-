@@ -37,11 +37,14 @@ outputs_dir = 'busi_ukabs_run'
 python train.py --arch UKABS --dataset {dataset} --input_w {input_size} --input_h {input_size} --name {dataset}_UKABS --data_dir {dataset_dir} --output_dir {outputs_dir}
 
 
+This how to train the model architecture. For glas dataset use image size 512.
+
+
 # for ACDC check the train_acdc.py and run it this way 
 python train_acdc.py
 
 
-This how to train the model architecture. For glas use image size 512.
+
 
 Step 4: 
 
